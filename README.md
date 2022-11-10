@@ -144,8 +144,7 @@ le = preprocessing.LabelEncoder()
 y = y.apply(le.fit_transform)
 y.head()
 # Now for train and test split (80% of  dataset into  training set and  other 20% into test data)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)  
-# Feature scaling
+X_train, X_test, y_train, y_test = train_test_sp![NN-04](https://user-images.githubusercontent.com/115135775/201170396-f4da12ea-ae45-4d8d-a6b3-5d5aac292653.png)
 scaler = StandardScaler()  
 scaler.fit(X_train)
 X_train = scaler.transform(X_train)  
@@ -160,7 +159,8 @@ print(classification_report(y_test,predictions))
 ```
 ## OUTPUT :
 
-"C:\Users\oviya\OneDrive\Desktop\P1.png"
+![NN-04](https://user-images.githubusercontent.com/115135775/201170445-baa185ac-e748-4877-93bf-cfc9f83947a8.png)
+
 
 ## RESULT:
 Thus,the implementation of MLP with back propagation is executed successfully.
